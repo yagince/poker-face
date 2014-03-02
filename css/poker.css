@@ -1,0 +1,45 @@
+.card {
+    font-size: 200%;
+    width: 200px;
+    height: 200px;
+    line-height: 200px;
+    text-align: center;
+    float:left;
+
+    border: 2px solid #DDD;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+
+    margin-right: 10px;
+    margin-bottom: 10px;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+
+}
+
+.card:hover {
+    cursor: pointer;
+    background: #CCC;
+}
+
+.card:active {
+    cursor: pointer;
+    background: #333;
+}
+
+.animate-show-hide.ng-hide-add, .animate-show-hide.ng-hide-remove {
+  -webkit-transition:all linear 2s;
+  -moz-transition:all linear 2s;
+  -o-transition:all linear 2s;
+  transition:all linear 2s;
+  display:block!important;
+}
+.animate-show-hide.ng-hide-add.ng-hide-add-active,
+.animate-show-hide.ng-hide-remove {
+  opacity:0;
+}
+.animate-show-hide.ng-hide-add,
+.animate-show-hide.ng-hide-remove.ng-hide-remove-active {
+  opacity:1;
+}
