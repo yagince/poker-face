@@ -1,4 +1,4 @@
-var app = angular.module('poker', ['websocketServices'])
+var app = angular.module('poker', ['ngAnimate','websocketServices'])
 
 app.controller('PokerController', ['$scope', 'Poker', function($scope, Poker) {
     var me = this;
