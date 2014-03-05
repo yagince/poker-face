@@ -4,7 +4,7 @@ app.controller('PokerController', ['$scope', 'Poker', function($scope, Poker) {
     var me = this;
     this.canSelect = true;
     $scope.selectedCards = [];
-    this.cards = [0,1,2,3,5,8,16,20,40,100,'?'];
+    this.cards = [0,'1/2',1,2,3,5,8,16,20,40,100,'?'];
 
     this.click = function(card) {
         this.canSelect = false;
