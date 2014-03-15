@@ -13,17 +13,18 @@
 
     margin-right: 10px;
     margin-bottom: 10px;
-    -webkit-transition: all 0.5s ease;
-    -moz-transition: all 0.5s ease;
-
 }
 
 .card:hover {
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
     cursor: pointer;
     background: #CCC;
 }
 
 .card:active {
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
     cursor: pointer;
     background: #333;
 }

@@ -31,11 +31,11 @@
           <button class="btn" ng-click="poker.reset()">reset</button>
           <button class="btn" ng-click="poker.open()">open</button>
         </div>
-        <div ng-hide="poker.openCards" ng-repeat="c in selectedCards">
-          <div class="card bg-success text-muted">Choice!!</div>
+        <div ng-hide="poker.openCards">
+          <div class="card bg-success text-muted" ng-repeat="c in selectedCards">Choice!!</div>
         </div>
-        <div ng-if="poker.openCards" ng-repeat="c in selectedCards">
-          <div class="card">
+        <div ng-if="poker.openCards">
+          <div class="card" ng-repeat="c in selectedCards">
             {{c.card}} <span class="text-muted" style="font-size: 50%">{{c.author}}</span>
           </div>
         </div>
