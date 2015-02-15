@@ -2,8 +2,13 @@ package main
 
 import (
 	"./poker"
+	"flag"
 	"fmt"
 	"net/http"
+)
+
+const (
+	DefaultPort = 8080
 )
 
 func main() {
@@ -12,5 +17,15 @@ func main() {
 	go server.Listen()
 
 	http.Handle("/", http.FileServer(http.Dir(".")))
-	http.ListenAndServe(":8080", nil)
+
+	var port int
+	flag.IntVar(&port, "port", DefaultPort, "port number")
+	flag.IntVar(&port, "p", DefaultPort, "port number")
+	flag.Parse()
+
+	fmt.Printf("listen port:%d\n", port)
+
+	if err := http.ListenAndServe(fmt.Sprintf(":%d", port), nil); err != nil {
+		fmt.Println(err)
+	}
 }
