@@ -1,11 +1,20 @@
 # Poker Face
 
-very simple web planing poker
+too simple web planing poker
 
-## Install
+## Requires
+
+- [Go](http://golang.org/dl/) 1.3 or later
+- [gpm](https://github.com/pote/gpm)
+- [gvp](https://github.com/pote/gvp)
+- [gpm-prebuild](https://github.com/technosophos/gpm-prebuild)
+
+## Installation
 
 ```
-$ go get github.com/mattn/gom
+gvp init
+source gvp in
+gpm install
 ```
 
 ## Start PokerFace
